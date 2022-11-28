@@ -1,2 +1,2 @@
 #!/bin/bash
-touch /home/uczen/du4
+touch /home/uczen/du5
