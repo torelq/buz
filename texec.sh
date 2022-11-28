@@ -1,4 +1,2 @@
 #!/bin/bash
-touch /home/uczen/du2
-whinefweora
-touch /home/uczen/du3
+touch /home/uczen/du4
